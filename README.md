@@ -1,1 +1,1 @@
-Crypto Masks ⟠ NFT
+Ether Masks ⟠ NFT
