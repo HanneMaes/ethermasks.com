@@ -1,9 +1,9 @@
 @font-face {
-  font-family: space-regular;
+  font-family: josefin-regular;
   src: url(fonts/JosefinSans/JosefinSans-Regular.ttf);
 }
 @font-face {
-  font-family: space-light;
+  font-family: josefin-light;
   src: url(fonts/JosefinSans/JosefinSans-Light.ttf);
 }
 
@@ -20,9 +20,9 @@ body {
 
   color: white;
   background-color: black;
-  font-family: space-regular;
+  font-family: josefin-regular;
 }
 
 h1 {
-  font-family: space-light;
+  font-family: josefin-light;
 }
