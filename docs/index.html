@@ -1,69 +1,58 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
 
-  <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WMN4PFH');</script>
-  <!-- End Google Tag Manager -->
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+					body { width: 100%; 
+						   height: 100%;
+						   margin: 0;
+						   position: fixed;
+						   background: rgba(0,0,0, 1) }
+                    canvas { width: 100%; height: 100%; outline: none; }
+                    #container { width: 100%; height: 100%; position: relative; }
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!--Let browser know website is optimized for mobile-->
+                    
+                    .spline-watermark {
+                        position: absolute;
+                        bottom: 16px;
+                        right: 16px;
+                        width: 32px;
+                        height: 32px;
+                        z-index: 2;
+                    }
 
-  <title>Ether Masks ⟠ NFT</title>
+                    .spline-watermark:hover {
+                        opacity: 0.8;
+                    }
 
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+                    .spline-watermark img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                
+                </style>
+                <title>Ether Masks - Website</title>
 
-  <!-- custom browser head color -->
-  <meta name="theme-color" content="#000000">
+                <link rel="icon" type="image/png" href="https://spline.design/_assets/_images/icon_favicon16x16.png" sizes="16x16">
+                <link rel="icon" type="image/png" href="https://spline.design/_assets/_images/icon_favicon32x32.png" sizes="32x32">
+            </head>
+            <body>
+                <div id='container'>
+                    <canvas id="canvas3d"></canvas>
+                    
+                    <a class="spline-watermark" href="https://spline.design">
+                        <img src="https://spline.design/_assets/_images/icon_favicon32x32.png">
+                    </a>
+                
+                </div>
 
-  <!-- my css -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- css libraries -->
-  <!-- <link rel="stylesheet" href="lib/aos.css"> -->
-
-  <!-- to generate favicons & manifest: https://www.pwabuilder.com/ || https://realfavicongenerator.net/ -->
-  <!-- to generate native apps: https://www.pwabuilder.com/ -->
-
-  <meta name="author" content="Hanne Maes">
-  <!-- meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-  <meta property="og:image" content=""-->
-
-</head>
-<body>
-
-<!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMN4PFH"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<h1>Ether Masks</h1>
-<em>Coming soon</em>
-
-<!-- エーテルマスク -->
-
-<!---------------->
-<!-- javascript -->
-<!---------------->
-
-<!-- my scripts -->
-<!-- <script src="script.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {    documentReady(); }); /* vanilla js */
-</script> -->
-
-</body>
-</html>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r113/three.min.js"></script>s
+                <script src="https://cdn.spline.design/lib/anime.min.js"></script>
+                <script src="js/spline.runtime.min.js"></script>
+                <script src="js/main.js"></script>
+            </body>
+        </html>
+        

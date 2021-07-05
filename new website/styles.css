@@ -1,0 +1,56 @@
+@font-face {
+  font-family: josefin-regular;
+  src: url(fonts/JosefinSans/JosefinSans-Regular.ttf);
+}
+@font-face {
+  font-family: josefin-light;
+  src: url(fonts/JosefinSans/JosefinSans-Light.ttf);
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: #111;
+  font-family: josefin-regular;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: josefin-light;
+}
+
+/* header & navigation */
+header {
+  height: 40px;
+  background-color: black;
+  padding: 10px;
+  padding-left:  30px;
+  padding-right: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left:  7px;
+  margin-right: 7px;
+}
+
+nav img {
+  vertical-align: bottom;
+}
+
+/* external branding */
+.raribleColor { color: #FCD932 }
